@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Your Macronutrient Breakdown</h1>
+    <div class="results">
+        <p>Daily Calories: <strong>{{ macros.calories }}</strong> kcal</p>
+        <p>Protein: <strong>{{ macros.protein }}</strong> g</p>
+        <p>Fats: <strong>{{ macros.fats }}</strong> g</p>
+        <p>Carbs: <strong>{{ macros.carbs }}</strong> g</p>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
