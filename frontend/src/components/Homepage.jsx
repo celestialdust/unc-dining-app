@@ -35,13 +35,15 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Use relative path since we've set up the proxy
     window.location.href = '/auth/google';
   };
   
   const handleSignUp = () => {
-    // Use relative path since we've set up the proxy
     window.location.href = '/auth/google';
+  };
+
+  const handleLearnMore = () => {
+    navigate('/about');
   };
 
   return (
@@ -70,7 +72,7 @@ export default function HomePage() {
             <Button variant="contained" color="primary" size="large" sx={{ mr: 2 }} onClick={handleSignUp}>
               Get Started
             </Button>
-            <Button variant="outlined" color="primary" size="large">
+            <Button variant="outlined" color="primary" size="large" onClick={handleLearnMore}>
               Learn More
             </Button>
           </Box>
